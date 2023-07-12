@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+/* CLEAR */
+
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/* CLEAR */
+
+.container {
+    max-width: 856px;
+    margin: 0 auto;
+}
+
+:root {
+    --dark-color: #21243D;
+    --dark: #142850;
+    --light: #8695A4;
+    --light-color: #E0E0E0;
+}
+
+header nav .nav-menu {
+    display: flex;
+    justify-content: end;
+    gap: 30px;
+    padding-top: 27px;
+}
+header nav .nav-menu a {
+    color: var(--dark-color);
+    font-size: 20px;
+    font-weight: 500;
+}
+header nav .nav-menu .red {
+    color: red;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+header .header-title {
+    color: var(--dark-color);
+    margin-top: 90px;
+    font: 44px;
+    padding: 0 0 20px 0;
+}
+header .header-content {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid var(--light-color);
+    padding-bottom: 47px;
+}
+header .header-content-item .header-box-date {
+    display: flex;
+    gap: 36px;
+    padding: 16px 0 19px 0;
+}
+header .header-content-item .header-box-date .span1 {
+    width: 62px;
+    height: 25px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: #142850;
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 900;
+}
+header .header-content-item .header-box-date span{
+    color: var(--light);
+    font-size: 18px;
+    font-weight: 400;
+}
+header .header-content-item .header-box-date p {
+    color: var(--dark-color);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+footer {
+    margin-top: 58px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+footer ul li i {
+    font-size: 35px;
+}
+
+img {
+    max-width: 100%;
+}
+footer p {
+    text-align: center;
+    margin-top: 26px;  
+    padding-bottom: 50px;
+}
+
+header nav .fa-bars {
+    display: none;
+}
+.header-box-1 {
+    display: none;
+}
+
+@media only screen and (max-width: 500px) {
+
+    header nav .fa-bars {
+        display: flex;
+        justify-content: end;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-right: 18px;
+    } 
+
+    header nav .nav-menu {
+        display: none;
+    }
+    
+    header .header-title {
+        color: var(--dark-color);
+        margin-top: 90px;
+        font: 44px;
+        padding: 0 0 20px 18px;
+    }
+    header .header-content-1 {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        border-bottom: 1px solid var(--light-color);
+        padding-bottom: 47px;
+        padding: 0 13px 0 13px;
+    }
+
+    header .header-content-1 img {
+        padding: 0 px 0 px;
+    }
+
+    header .header-content {
+        display: none;
+    }
+
+    header .header-content-item .header-box-date {
+        display: flex;
+        gap: 36px;
+        padding: 16px 0 19px 0;
+    }
+
+
+    header .header-content h3 {
+        color: var(--dark-color);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 30px;
+    }
+
+    header .header-content-item .header-box-date .span1 {
+        width: 62px;
+        height: 25px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        background: #142850;
+        color: #FFF;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 900;
+        margin-left: 12px;
+    }
+    header .header-content-item .header-box-date span{
+        color: var(--light);
+        font-size: 18px;
+        font-weight: 400;
+    }
+    header .header-content-item .header-box-date p {
+        color: var(--dark-color);
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .header-box-1 {
+        display: flex;
+        flex-direction: column;justify-content: center;
+    }
+
+    header .header-content-item-box .header-box-date-box .span2 {
+        width: 62px;
+        height: 25px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        background: #142850;
+        color: #FFF;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 900;
+        margin-left: 12px;
+    }
+    header .header-content-item .header-box-date span{
+        color: var(--light);
+        font-size: 18px;
+        font-weight: 400;
+    }
+    header .header-content-item .header-box-date p {
+        color: var(--dark-color);
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+/* CLEAR */
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+/* CLEAR */
+
+:root {
+    --dark-color: #21243D;
+}
+
+.container {
+    max-width: 856px;
+    margin: 0 auto;
+}
+
+header nav ul{
+   display: flex;
+   gap: 20px;
+   justify-content: end;
+   margin-right: 100px;
+   margin-top: 40px;
+   font-weight: 600;
+}
+
+header nav ul li .red {
+    color: red;
+}
+
+header nav ul a {
+    color: black;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.parent p {
+    width: 300px;
+    font-size: 10px;
+}
+
+.parent h1 {
+    margin-right: 240px;
+}
+.parent .box {
+    display: flex;
+}
+h6 {
+    font-weight: 400;
+}
+.h6-2  {
+   color: gray;
+   font-weight: 400;
+}
+
+[class*="child"] {
+    border-bottom: 1px solid var(--dark-color);
+    padding: 20px 5px;
+}
+
+footer .ICONS ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 25px;
+    gap: 20px;
+}
+
+footer h5 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav .fa-bars {
+    font-size: 30px;
+    color: #444;
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    nav .fa-bars {
+        display: flex;
+        justify-content: end;
+        margin-right: 20px;
+        margin-top: 40px;
+        font-weight: 600;
+    }
+
+    header nav ul{
+        display: none;
+     }
+     
+     .parent p {
+         width: 339px;
+         color: var(--dark-color);
+        font-size: 16px;
+        font-weight: 400;
+        width: 339px;
+     }
+     
+     .parent h1 {
+        color: var(--dark-color);
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 60px;
+     }
+     .parent .box {
+         display: flex;
+     }
+     h6 {
+         font-weight: 400;
+     }
+     .h6-2  {
+        color: gray;
+        font-weight: 400;
+     }
+     
+     [class*="child"] {
+         border-bottom: 1px solid #21243D;
+         padding: 20px 5px;
+     }
+    header h4 {
+        color: var(--dark-color,);
+        font-size: 26px;
+        font-weight: 400;
+    }
+    header .h6-2 { 
+    color: var(--dark-color, #21243D);
+
+    }
+    footer .ICONS ul {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+        font-size: 25px;
+        gap: 20px;
+    }
+    
+    footer h5 {
+        text-align: center;
+        margin-top: 30px;
+    }
+}
